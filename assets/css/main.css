@@ -6,10 +6,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-	article {
-		height: 80%;
-		overflow: scroll;
-	}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -651,7 +648,7 @@ input, select, textarea {
 		.image:before {
 			pointer-events: none;
 			background-image: url("../../images/overlay.png");
-			background-color: rgba(19, 21, 25, 0.5);
+			/* background-color: rgba(19, 21, 25, 0.5); */
 			border-radius: 4px;
 			content: '';
 			display: block;
@@ -1553,6 +1550,8 @@ input, select, textarea {
 			background-color: rgba(27, 31, 34, 0.85);
 			border-radius: 4px;
 			opacity: 0;
+			max-height: 80vh;
+			overflow: scroll;
 		}
 
 			#main article.active {
@@ -1566,8 +1565,10 @@ input, select, textarea {
 			#main article .close {
 				display: block;
 				position: absolute;
-				top: 0;
-				right: 0;
+				/* position: sticky; */
+				/* position: -webkit-sticky; */
+				top: -10px;
+				left: -12px;
 				width: 4rem;
 				height: 4rem;
 				cursor: pointer;
