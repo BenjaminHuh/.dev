@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	background-color: black;
 }
 
 ol, ul {
@@ -1673,5 +1674,6 @@ input, select, textarea {
 		width: 100%; 
 		height: 100%;
 		object-fit: cover;
+		opacity: 0.2;
 	}
 
